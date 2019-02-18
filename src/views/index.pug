@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://bootswatch.com/4/cerulean/bootstrap.min.css")
+        title Sistema de ventas
+    body(class="container-fluid")
+        header(class="navbar navbar-expand-lg navbar-dark bg-primary")
+            a(href="/" class="navbar-brand") Inicio
+        main
+            div(class="jumbotron justify-content-center")
+                h1(class = "text-center mb-3") ¿Qué hará hoy?
+                div(class="row justify-content-around")
+                    div(class="card border-primary col-12 col-sm-6 col-md-4 col-lg-3")
+                        div(class="card-header text-center") Clientes
+                        div(class="card-body")
+                            div(class="column")
+                                div
+                                    a(href="/clients" class="btn btn-info col-12") Consultar clientes
+                                div
+                                    a(href="/clients/add" class ="btn btn-primary col-12") Registrar cliente
+                    div(class="card border-primary col-12 col-sm-6 col-md-4 col-lg-3")
+                        div(class="card-header text-center") Productos
+                        div(class="card-body")
+                            div(class="column")
+                                div
+                                    a(href="/products" class="btn btn-info col-12") Consultar lista de productos
+                                div
+                                    a(href="/products/add" class ="btn btn-primary col-12") Registrar producto         
+                    div(class="card border-primary col-12 col-sm-6 col-md-4 col-lg-3")
+                        div(class="card-header text-center") Proveedores
+                        div(class="card-body")
+                            div(class="column")
+                                div
+                                    a(href="/providers" class="btn btn-info col-12") Consultar proveedores
+                                div
+                                    a(href="/providers/add" class ="btn btn-primary col-12") Registrar proveedor                      
